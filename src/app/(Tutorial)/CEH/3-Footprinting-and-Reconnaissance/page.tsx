@@ -17,7 +17,9 @@ export default function Page() {
     },
     { title: 'جمع آوری اطلاعات از یک سازمان یا شرکت ', href: `${BaseUrl}collect-information-from-company` },
     { title: 'Google Hacking', href: `${BaseUrl}google-hacking` },
-    { title: 'موتور جستجوی Shodan', href: `${BaseUrl}shodan` }
+    { title: 'موتور جستجوی Shodan', href: `${BaseUrl}shodan` },
+    { title: 'DNS Records', href: `${BaseUrl}dns-records` },
+    { title: 'nslookup', href: `${BaseUrl}nslookup` }
   ]
 
   const [links, setLinks] = useState<LinkItem[]>(initialLinks)
