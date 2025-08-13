@@ -2,7 +2,7 @@
 
 type PropTypes = { children: React.ReactNode; size?: string; important?: boolean }
 
-export default function TextNote({ children, important = false, size = 'text-xs' }: PropTypes) {
+export default function TextNote({ children, important = true, size = 'text-md' }: PropTypes) {
   return (
     <p
       className={`my-1 ${
