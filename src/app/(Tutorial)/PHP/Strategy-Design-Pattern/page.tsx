@@ -1,6 +1,6 @@
 /** @format */
 
-import { Code, PageTitle, TextNote } from '@/app/Components/common'
+import { PageTitle } from '@/app/Components/common'
 import { LI, UL } from '@/app/Components/List'
 
 export default function Page() {
