@@ -207,8 +207,6 @@ echo "Hello";
           هدف اینه مقدار name رو از بیرون کلاس بخونیم:
           <Code>
             {`
-<?php
-<?php
 class Person
 {
     private $name = 'Arash';
