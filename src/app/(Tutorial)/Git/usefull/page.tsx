@@ -17,7 +17,7 @@ export default function Page() {
         </LI>
         <LI simple={false} title='git clean'>
           این دستور فایلی که کامیت نشده رو پاک میکنه.
-          <Code>{`git clean filename`}</Code>
+          <Code>{`git clean -f filename`}</Code>
         </LI>
       </UL>
     </PageTitle>
