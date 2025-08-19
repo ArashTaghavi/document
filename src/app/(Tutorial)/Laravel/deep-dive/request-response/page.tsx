@@ -112,6 +112,41 @@ $app->loadEnvironmentFrom('.arash');`}</Code>
           اگه ایرنو مثلا توی web.php بزاریم کلا میدلورهایی که ست کردیم روی روت ها کنسل میشن. این موضوع میدلورهای گلوبال
           رو کنسل نمیکنه.
         </LI>
+        <LI simple={false} title='Reflection'>
+          میخوایم با این ساختار متد m1 رو از کلاس B کال کنیم و حتی دپندنسی های اون متدم بهش پاس بدیم.
+          <Code>
+            {`<?php
+class A
+{
+    public string $message = 'Hey there...';
+}
+
+class B
+{
+
+    public function m1(A $a)
+    {
+        echo $a->message;
+    }
+}
+
+
+function call_it($input)
+{
+    [$class, $method] = explode('@', $input);
+    $m = new ReflectionMethod('B', 'm1');
+    $params = $m->getParameters();
+    $typeHintParam = $params[0]->getType()->getName();
+
+    $typeHint = new $typeHintParam;
+    $b =  new $class();
+    $b->$method($typeHint);
+}
+
+call_it('B@m1');
+`}
+          </Code>
+        </LI>
       </UL>
     </PageTitle>
   )
