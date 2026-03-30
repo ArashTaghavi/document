@@ -16,7 +16,7 @@ export default function LI({ children, title, simple = true }: PropTypes) {
   return (
     <li className={styles}>
       {title && <strong className='text-xl underline underline-offset-8'>{title}</strong>}
-      {title && <span className='text-xl'> :</span>}
+      {title && <span className='text-xl'>: </span>}
       <span>{children}</span>
     </li>
   )
