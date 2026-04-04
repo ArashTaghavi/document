@@ -5,7 +5,7 @@ import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 
 import { FirstStep, SecondStep, ThirdStep } from './components'
 
-import { breadcrumb, steps, url,title } from './data'
+import { breadcrumb, steps, url, title } from './data'
 
 export default function SqlInjection() {
   return (
