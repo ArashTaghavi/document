@@ -1,7 +1,5 @@
 /** @format */
 
-import React from 'react'
-
 type StepType = 'GOAL' | 'DESCRIPTION' | 'METHOD' | 'RESULT' | 'QUERY'
 
 type PropTypes = {
@@ -43,7 +41,7 @@ export default function Step({ children, type }: PropTypes) {
 
   return (
     <div className={`rounded-lg px-4 py-3 my-2 ${className}`}>
-      <p className='mb-1 text-md font-bold opacity-80'>{label}</p>
+      <p className='mb-1 font-bold opacity-80'>{label}</p>
       <div className='text-sm'>{children}</div>
     </div>
   )
