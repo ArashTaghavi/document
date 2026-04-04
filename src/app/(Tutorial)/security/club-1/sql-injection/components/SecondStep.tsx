@@ -51,6 +51,7 @@ export default function SecondStep({ url }: { url: string }) {
           <Bold>نمایش خطای دیتابیسی،</Bold>
           <Bold>عدم لود شدن دیتا</Bold>و یا بصورت کلی
           <Bold>تغییر در نتیجه ی کوئری و به طبع آن تغییر در نمایش اطلاعات سایت</Bold>
+          یا <span className='font-bold underline underline-offset-4'>ریدایرکت شدن وب سایت </span>
           داشته باشد.
         </p>
         <Bold>
@@ -159,7 +160,6 @@ export default function SecondStep({ url }: { url: string }) {
           در حالت دوم اما id به درستی مقدار دهی می شود و مقدار <code>order by</code> نیز پس از آن قرار می گیرد و سپس
           کاراکتر کوتیشن نهایی نیز توسط علامت <code>--</code> کامنت می شود.
         </p>
-        
       </Step>
     </Card>
   )
