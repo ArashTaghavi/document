@@ -16,11 +16,11 @@ import {
 export default function Page() {
   const breadcrumb: LinkItem[] = [
     { title: 'فهرست مستندات', href: '/' },
-    { title: 'هنر شی گرایی', href: '/security' }
+    { title: 'هنر شی گرایی', href: '/oop' }
   ]
 
   return (
-    <PageLayout title='مقدمه' breadcrumb={breadcrumb}>
+    <PageLayout title='فصل اول' breadcrumb={breadcrumb}>
       <Compare />
       <Encapsulation />
       <MagicValues />
