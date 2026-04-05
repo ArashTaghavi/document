@@ -10,6 +10,10 @@ export default function Page() {
     {
       title: 'هک و امنیت',
       href: 'security'
+    },
+    {
+      title: 'هنر شی گرایی',
+      href: 'oop'
     }
   ]
 
