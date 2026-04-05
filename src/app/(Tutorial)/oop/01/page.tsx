@@ -2,7 +2,16 @@
 
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
-import { Compare, Encapsulation, MagicValues } from './components'
+import {
+  Abstraction,
+  Aggregation,
+  Compare,
+  Encapsulation,
+  HasOrIs,
+  MagicValues,
+  MarkerInterface,
+  Polymorphism
+} from './components'
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
@@ -15,6 +24,11 @@ export default function Page() {
       <Compare />
       <Encapsulation />
       <MagicValues />
+      <Abstraction />
+      <HasOrIs />
+      <Aggregation />
+      <MarkerInterface />
+      <Polymorphism />
     </PageLayout>
   )
 }

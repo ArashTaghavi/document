@@ -6,7 +6,7 @@ import { LinkItem } from '@/app/types'
 const Oop = () => {
   const links: LinkItem[] = [
     {
-      title: 'جلسه اول',
+      title: 'فصل اول',
       href: '/oop/01'
     }
   ]
