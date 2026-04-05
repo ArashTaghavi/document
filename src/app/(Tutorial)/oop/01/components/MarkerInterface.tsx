@@ -13,7 +13,7 @@ export default function MarkerInterface() {
         مارکر اینترفیس‌ها برای این بودند که به نوعی metadata یا برچسب روی کلاس بگذارند تا سیستم بداند با آن کلاس چه
         رفتاری داشته باشد.
       </p>
-      <Code>markerinterface.php</Code>
+      <Code light>markerinterface.php</Code>
     </Card>
   )
 }

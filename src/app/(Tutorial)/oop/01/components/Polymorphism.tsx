@@ -1,6 +1,6 @@
 /* @format*/
 
-import { Bold, Card } from '@/app/Components/common'
+import { Bold, Card, Code } from '@/app/Components/common'
 
 export default function Polymorphism() {
   return (
@@ -15,9 +15,7 @@ export default function Polymorphism() {
         دهد، دیگر کاری نداری چطور انجامش می‌دهد. این کار باعث می‌شود کدت بسیار انعطاف‌پذیر شود و برای اضافه کردن
         ویژگی‌های جدید، نیاز نباشد کل کدهای قبلی را شخم بزنی.
       </p>
-      <p>
-        در کد زیر 
-      </p>
+      <Code light>polymorphism.php</Code>
     </Card>
   )
 }

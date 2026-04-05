@@ -17,7 +17,7 @@ export default function HasOrIs() {
         دارد.
       </p>
       <p>کامپوزیشن کمک میکند که یک کلاس بزرگ را به قطعات کوچکتر خرد کنیم.</p>
-      <Code>composition.php</Code>
+      <Code light>composition.php</Code>
 
       <AiDescription dark>
         <Bold>قاعده‌ی خوب:</Bold>
