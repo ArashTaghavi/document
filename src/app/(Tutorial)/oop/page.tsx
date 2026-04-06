@@ -8,6 +8,10 @@ const Oop = () => {
     {
       title: 'فصل اول',
       href: '/oop/01'
+    },
+    {
+      title: 'فصل دوم',
+      href: '/oop/02'
     }
   ]
 
