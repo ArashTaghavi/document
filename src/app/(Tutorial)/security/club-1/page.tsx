@@ -12,10 +12,6 @@ const Club1 = () => {
     {
       title: 'SQL Injection',
       href: '/security/club-1/sql-injection'
-    },
-    {
-      title: 'کلوپ پیشرفته',
-      href: '/security/club-advance'
     }
   ]
 

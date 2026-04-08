@@ -3,7 +3,7 @@
 import { LI, UL } from '@/app/Components/List'
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 
-import { FirstStep, SecondStep, ThirdStep, FourthStep } from './components'
+import { FirstStep, SecondStep, ThirdStep, FourthStep, CheatSheet } from './components'
 
 import { breadcrumb, steps, url, title } from './data'
 
@@ -22,6 +22,7 @@ export default function SqlInjection() {
       <SecondStep url={url} />
       <ThirdStep url={url} />
       <FourthStep url={url} />
+      <CheatSheet />
     </PageLayout>
   )
 }

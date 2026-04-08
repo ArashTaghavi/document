@@ -8,7 +8,8 @@ const steps: StepType[] = [
   { title: '۱', body: 'کشف آسیب پذیری SQL Injection' },
   { title: '۲', body: 'پیدا کردن تعداد ستون های موجود در کوئری' },
   { title: '۳', body: 'واکشی اطلاعات موجود در دیتابیس' },
-  { title: '۴', body: 'خطاهای امنیتی احتمالی و روش های دور زدن آن' }
+  { title: '۴', body: 'خطاهای امنیتی احتمالی و روش های دور زدن آن' },
+  { title: '۵', body: 'جمع بندی' },
 ]
 
 const breadcrumb: LinkItem[] = [
