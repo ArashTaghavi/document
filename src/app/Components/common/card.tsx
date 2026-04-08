@@ -1,6 +1,7 @@
 /** @format */
 'use client'
 
+import { ArrowDown, ArrowUp } from 'lucide-react';
 import { useState } from 'react'
 
 type PropTypes = { children: React.ReactNode; title?: string; simple?: boolean }
@@ -17,7 +18,7 @@ export default function Card({ children, title }: PropTypes) {
       <div className='flex justify-between'>
         <strong className='my-2'>{title}</strong>
         <button className='cursor-pointer' onClick={handleToggle}>
-          {open ? 'close' : 'open'}
+          {open ? <ArrowUp size={20} /> : <ArrowDown size={20} />}
         </button>
       </div>
       <div className={open ? 'h-auto' : 'hidden'}>{children}</div>
