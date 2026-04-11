@@ -2,7 +2,7 @@
 
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
-import { DTO, Entity, Event, ValueObject } from './components'
+import { DTO, Entity, Event, Exception, ValueObject, Consistency } from './components'
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
@@ -16,7 +16,8 @@ export default function Page() {
       <ValueObject />
       <Entity />
       <Event />
-
+      <Exception />
+      <Consistency />
     </PageLayout>
   )
 }
