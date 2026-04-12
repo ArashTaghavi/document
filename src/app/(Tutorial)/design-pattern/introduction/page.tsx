@@ -2,7 +2,7 @@
 
 import { PageLayout } from "@/app/Components/PageLayout/page-layout";
 import { LinkItem } from "@/app/types";
-import { TellDontAsk } from "./components";
+import { TellDontAsk, Yagni } from "./components";
 
 const Introduction = () => {
   const breadcrumb: LinkItem[] = [
@@ -16,6 +16,7 @@ const Introduction = () => {
   return (
     <PageLayout title="مقدمه" breadcrumb={breadcrumb}>
       <TellDontAsk />
+      <Yagni />
     </PageLayout>
   );
 };

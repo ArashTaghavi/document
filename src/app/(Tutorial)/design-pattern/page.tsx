@@ -17,7 +17,7 @@ const DesignPattern = () => {
 
   return (
     <PageLayout
-      title="مقدمه"
+      title="الگوهای طراحی حرفه ای (Design Pattern)"
       toc={links}
       breadcrumb={[{ title: "فهرست مستندات", href: "/" }]}
     />
