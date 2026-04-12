@@ -29,7 +29,7 @@ const Solid = () => {
     },
     {
       title: "Interface Segration Principle",
-      href: "/design-pattern/solid/interface-segration",
+      href: "/design-pattern/solid/interface-segregation",
     },
     {
       title: "Dependency Inversion Principle",
