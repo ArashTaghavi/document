@@ -7,11 +7,15 @@ const DesignPattern = () => {
   const links: LinkItem[] = [
     {
       title: "مقدمه",
-      href: "/design-pattern/introduction",
+      href: "/design-pattern/introduction"
     },
     {
       title: "اصول SOLID",
-      href: "/design-pattern/solid",
+      href: "/design-pattern/solid"
+    },
+    {
+      title: "Factory Method And Abstract Factory",
+      href: "/design-pattern/factory-method"
     },
   ];
 
