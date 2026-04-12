@@ -1,6 +1,6 @@
 /** @format */
 
-import { Bold, Card, Code, TextNote } from '@/app/Components/common'
+import { Card, Code, TextNote } from '@/app/Components/common'
 import { LI, UL } from '@/app/Components/List'
 
 export default function CheatSheet() {
