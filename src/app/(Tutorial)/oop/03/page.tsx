@@ -1,17 +1,24 @@
 /** @format */
 
-import { PageLayout } from '@/app/Components/PageLayout/page-layout'
-import { LinkItem } from '@/app/types'
-import { DTO, Entity, Event, Exception, ValueObject, Terminology } from './components'
+import { PageLayout } from "@/app/Components/PageLayout/page-layout";
+import { LinkItem } from "@/app/types";
+import {
+  DTO,
+  Entity,
+  Event,
+  Exception,
+  ValueObject,
+  Terminology,
+} from "./components";
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
-    { title: 'فهرست مستندات', href: '/' },
-    { title: 'هنر شی گرایی', href: '/oop' }
-  ]
+    { title: "فهرست مستندات", href: "/" },
+    { title: "هنر شی گرایی", href: "/oop" },
+  ];
 
   return (
-    <PageLayout title='فصل سوم' breadcrumb={breadcrumb}>
+    <PageLayout title="فصل سوم" breadcrumb={breadcrumb}>
       <DTO />
       <ValueObject />
       <Entity />
@@ -19,5 +26,5 @@ export default function Page() {
       <Exception />
       <Terminology />
     </PageLayout>
-  )
+  );
 }

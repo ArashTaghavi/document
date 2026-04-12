@@ -1,5 +1,5 @@
 /** @format */
 
 export default function Divider() {
-  return <hr className='my-2' />
+  return <hr className="my-2" />;
 }

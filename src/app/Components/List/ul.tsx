@@ -1,14 +1,14 @@
 /** @format */
 
-import React from 'react'
+import React from "react";
 
-type PropTypes = { children: React.ReactNode; title?: string }
+type PropTypes = { children: React.ReactNode; title?: string };
 
 export default function UL({ children, title }: PropTypes) {
   return (
-    <div className='p-5 m-5 mb-2 bg-gray-900/70 rounded-md shadow-md shadow-white/10'>
-      {title && <h2 className='font-extrabold text-2xl mb-5'>{title}</h2>}
+    <div className="p-5 m-5 mb-2 bg-gray-900/70 rounded-md shadow-md shadow-white/10">
+      {title && <h2 className="font-extrabold text-2xl mb-5">{title}</h2>}
       <ul>{children}</ul>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 /** @format */
 
 export default function Page() {
-  return <div>ok</div>
+  return <div>ok</div>;
 }

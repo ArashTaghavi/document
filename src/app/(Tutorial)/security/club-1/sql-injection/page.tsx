@@ -1,17 +1,23 @@
 /** @format */
 
-import { LI, UL } from '@/app/Components/List'
-import { PageLayout } from '@/app/Components/PageLayout/page-layout'
+import { LI, UL } from "@/app/Components/List";
+import { PageLayout } from "@/app/Components/PageLayout/page-layout";
 
-import { FirstStep, SecondStep, ThirdStep, FourthStep, CheatSheet } from './components'
+import {
+  FirstStep,
+  SecondStep,
+  ThirdStep,
+  FourthStep,
+  CheatSheet,
+} from "./components";
 
-import { breadcrumb, steps, url, title } from './data'
+import { breadcrumb, steps, url, title } from "./data";
 
 export default function SqlInjection() {
   return (
-    <PageLayout title='SQL Injection' breadcrumb={breadcrumb}>
+    <PageLayout title="SQL Injection" breadcrumb={breadcrumb}>
       <UL title={title}>
-        {steps.map(step => (
+        {steps.map((step) => (
           <LI title={step.title} key={step.title}>
             {step.body}
           </LI>
@@ -24,5 +30,5 @@ export default function SqlInjection() {
       <FourthStep url={url} />
       <CheatSheet />
     </PageLayout>
-  )
+  );
 }

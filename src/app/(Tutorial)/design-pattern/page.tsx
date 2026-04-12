@@ -3,28 +3,24 @@
 import { PageLayout } from "@/app/Components/PageLayout/page-layout";
 import { LinkItem } from "@/app/types";
 
-const Security = () => {
+const DesignPattern = () => {
   const links: LinkItem[] = [
     {
-      title: "کلوپ ۱",
-      href: "/security/club-1",
+      title: "مقدمه",
+      href: "/design-pattern/introduction",
     },
     {
-      title: "کلوپ ۲",
-      href: "/security/club-2",
-    },
-    {
-      title: "کلوپ پیشرفته",
-      href: "/security/club-advance",
+      title: "اصول SOLID",
+      href: "/design-pattern/solid",
     },
   ];
 
   return (
     <PageLayout
-      title="هک و امنیت"
+      title="مقدمه"
       toc={links}
       breadcrumb={[{ title: "فهرست مستندات", href: "/" }]}
     />
   );
 };
-export default Security;
+export default DesignPattern;
