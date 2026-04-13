@@ -10,7 +10,7 @@ type PropTypes = {
 
 export default function LI({ children, title, simple = true }: PropTypes) {
   const styles = useMemo(
-    () => (!simple ? "bg-gray-700 rounded-md shadow-sm shadow-white/30" : ""),
+    () => (!simple ? "bg-gray-700/50 rounded-md shadow-sm shadow-white/30" : ""),
     [simple],
   );
 

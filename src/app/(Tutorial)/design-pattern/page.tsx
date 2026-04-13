@@ -17,6 +17,14 @@ const DesignPattern = () => {
       title: "Factory Method And Abstract Factory",
       href: "/design-pattern/factory-method"
     },
+    {
+      title: "Builder",
+      href: "/design-pattern/builder"
+    },
+    {
+      title: "Adapter",
+      href: "/design-pattern/adapter"
+    },
   ];
 
   return (

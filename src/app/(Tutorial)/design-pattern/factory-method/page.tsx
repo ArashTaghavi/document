@@ -1,10 +1,11 @@
 /** @format */
 
+import { Code } from "@/app/Components/common";
 import { LI, UL } from "@/app/Components/List";
 import { PageLayout } from "@/app/Components/PageLayout/page-layout";
 import { LinkItem } from "@/app/types";
 
-const Introduction = () => {
+const Page = () => {
   const breadcrumb: LinkItem[] = [
     { title: "فهرست مستندات", href: "/" },
     {
@@ -44,7 +45,16 @@ const Introduction = () => {
           تمیز شدن ساخت object logic
         </LI>
       </UL>
+      <Code light>
+        factory.php
+      </Code>
+      <Code light>
+        factory2.php
+      </Code>
+      <Code light>
+        factory3.php
+      </Code>
     </PageLayout>
   );
 };
-export default Introduction;
+export default Page;
