@@ -29,6 +29,14 @@ const DesignPattern = () => {
       title: "Bridge",
       href: "/design-pattern/bridge"
     },
+    {
+      title: "Decorator",
+      href: "/design-pattern/decorator"
+    },
+    {
+      title: "Facade",
+      href: "/design-pattern/facade"
+    },
   ];
 
   return (
