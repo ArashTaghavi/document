@@ -61,6 +61,14 @@ const DesignPattern = () => {
       title: "State",
       href: "/design-pattern/state"
     },
+    {
+      title: "Template Method",
+      href: "/design-pattern/template-method"
+    },
+    {
+      title: "Command",
+      href: "/design-pattern/command"
+    }
   ];
 
   return (
