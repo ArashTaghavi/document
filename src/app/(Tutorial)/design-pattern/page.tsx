@@ -53,6 +53,14 @@ const DesignPattern = () => {
       title: "Chain of Responsibility",
       href: "/design-pattern/chain-of-responsibility"
     },
+    {
+      title: "Observer",
+      href: "/design-pattern/observer"
+    },
+    {
+      title: "State",
+      href: "/design-pattern/state"
+    },
   ];
 
   return (

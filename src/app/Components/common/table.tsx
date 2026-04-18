@@ -12,7 +12,7 @@ function Table({ children }: { children: ReactNode }) {
 
 function Head({ children }: { children: ReactNode }) {
     return (
-        <thead className="bg-gray-100 text-gray-900 text-xs tracking-wider">
+        <thead className="bg-gray-100 text-gray-900 tracking-wider">
             {children}
         </thead>
     );
