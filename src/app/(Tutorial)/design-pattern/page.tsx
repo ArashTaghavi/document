@@ -37,6 +37,14 @@ const DesignPattern = () => {
       title: "Facade",
       href: "/design-pattern/facade"
     },
+    {
+      title: "Fly Weight",
+      href: "/design-pattern/fly-weight"
+    },
+    {
+      title: "Proxy",
+      href: "/design-pattern/proxy"
+    },
   ];
 
   return (
