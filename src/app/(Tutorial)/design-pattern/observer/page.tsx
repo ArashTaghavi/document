@@ -29,7 +29,7 @@ const Page = () => {
           </p>
           <Code light>
             {`Order::created(function ($order) {
-    // مستقیم به آبجکت وصل شده
+     مستقیم به آبجکت وصل شده
 });`}
           </Code>
         </LI>
