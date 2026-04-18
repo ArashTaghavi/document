@@ -45,6 +45,14 @@ const DesignPattern = () => {
       title: "Proxy",
       href: "/design-pattern/proxy"
     },
+    {
+      title: "Strategy",
+      href: "/design-pattern/strategy"
+    },
+    {
+      title: "Chain of Responsibility",
+      href: "/design-pattern/chain-of-responsibility"
+    },
   ];
 
   return (

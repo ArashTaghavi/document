@@ -24,6 +24,9 @@ export default function Terminology() {
                         <SimpleLI title="coupling ذهنی">برای فهم A باید چند جای دیگر را بدانید.</SimpleLI>
                     </SimpleUL>
                 </LI>
+                <SimpleLI title='Container Resolution (Laravel)'>
+                    فرایندی که در آن Laravel Service Container تصمیم می‌گیرد یک کلاس را چطور بسازد و dependencyهایش را تامین کند.
+                </SimpleLI>
             </UL>
         </Card>
     )
