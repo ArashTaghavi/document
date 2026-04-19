@@ -1,7 +1,7 @@
 /** @format */
 
-import { Bold, Code, Divider, Step } from "@/app/Components/common";
-import { Card } from "@/app/Components/common";
+import { Card, Bold, Code, Divider } from "@/app/Components/common";
+import Step from "./Step";
 
 export default function SecondStep({ url }: { url: string }) {
   return (

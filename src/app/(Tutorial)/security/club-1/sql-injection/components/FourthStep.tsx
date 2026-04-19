@@ -5,10 +5,11 @@ import {
   Bold,
   Code,
   Divider,
-  Step,
   TextNote,
 } from "@/app/Components/common";
 import { Card } from "@/app/Components/common";
+import Step from "./Step";
+
 
 export default function FourthStep({ url }: { url: string }) {
   return (

@@ -1,11 +1,11 @@
 /** @format */
 import Image from "next/image";
 
-import { Bold, Code, Step } from "@/app/Components/common";
-import { Card } from "@/app/Components/common";
+import { Card, Bold, Code } from "@/app/Components/common";
 import Post1Image from "@/app/assets/images/post-1.png";
 import Post2Image from "@/app/assets/images/post-2.png";
 import Post3Image from "@/app/assets/images/post-3.png";
+import Step from "./Step";
 
 const url2 = "https://test.com/post.php?id=-10";
 

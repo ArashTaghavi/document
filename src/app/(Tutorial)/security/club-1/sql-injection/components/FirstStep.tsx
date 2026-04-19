@@ -1,7 +1,7 @@
 /** @format */
 
-import { Code, Step } from "@/app/Components/common";
-import { Card } from "@/app/Components/common";
+import { Card, Code } from "@/app/Components/common";
+import Step from "./Step";
 
 export default function FirstStep({ url }: { url: string }) {
   return (
@@ -13,7 +13,7 @@ export default function FirstStep({ url }: { url: string }) {
         <p>
           با قرار دادن کاراکتر تک کوتیشتن در انتهای url کار را شروع می کنیم.
         </p>
-        <Code>{`${url}'`}</Code>
+        <Code>{url}</Code>
       </Step>
 
       <Step type="DESCRIPTION">
@@ -33,7 +33,7 @@ export default function FirstStep({ url }: { url: string }) {
         <Code>
           {
             "1) Before Quate: $query = 'SELECT id, name, category_id from posts WHERE id = 10'"
-          }{" "}
+          }
         </Code>
         <Code>
           {
