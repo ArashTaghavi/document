@@ -68,6 +68,10 @@ const DesignPattern = () => {
     {
       title: "Command",
       href: "/design-pattern/command"
+    },
+    {
+      title: "Mediator",
+      href: "/design-pattern/mediator"
     }
   ];
 
