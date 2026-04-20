@@ -19,6 +19,10 @@ export default function Page() {
       title: "الگوهای طراحی حرفه ای (Design Pattern)",
       href: "design-pattern",
     },
+    {
+      title: "Golang",
+      href: "golang",
+    },
   ];
 
   return (
