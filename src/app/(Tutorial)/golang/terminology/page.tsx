@@ -1,10 +1,11 @@
 /** @format */
 
-import { Bold, Card, Code } from '@/app/Components/common'
-import { SimpleLI, SimpleUL } from '@/app/Components/List'
+import { Card, Item } from '@/app/Components/common'
+import { LI, SimpleLI, SimpleUL, UL } from '@/app/Components/List'
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
-import { AOT, ByteCode, JIT, Profiling } from './components'
+import { AOT, ByteCode, JIT, Profiling, Summary } from './components'
+import { Items } from './data'
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
@@ -14,15 +15,19 @@ export default function Page() {
 
   return (
     <PageLayout title='اصطلاحات و مفاهیم' breadcrumb={breadcrumb}>
-      <Card title='تعاریف پایه ای'>
-        <SimpleUL>
-          <SimpleLI title='Compile'>یعنی تبدیل کد سورس (مثلاً C#, Java, Kotlin) به یک فرم میانی یا ماشین.</SimpleLI>
-          <SimpleLI title='Execute'>یعنی اجرای واقعی برنامه توسط CPU.</SimpleLI>
-          <SimpleLI title='Hot Path'>
-            بخشی از مسیر اجرای برنامه که در زمان اجرا، بیشترین تکرار یا بیشترین مصرف CPU را دارد. به بیان ساده تر، کدی
-            که یا زیاد اجرا می شود یا زمان زیادی از برنامه می گیرد.
-          </SimpleLI>
-        </SimpleUL>
+      <Card title='تعاریف'>
+        {Items.map(item => (
+          <UL title={item.title} key={item.title}>
+            {item.body.map(body => (
+              <LI title={body.title} key={body.title}>
+                <SimpleUL>
+                  <SimpleLI title='تعریف'>{body.definition}</SimpleLI>
+                  <SimpleLI title='هدف'>{body.purpose}</SimpleLI>
+                </SimpleUL>
+              </LI>
+            ))}
+          </UL>
+        ))}
       </Card>
       <AOT />
       <Profiling />

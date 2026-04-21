@@ -81,76 +81,26 @@ store x`}
               </Table.Row>
             </Table.Body>
           </Table>
-          <Table>
-            <Table.Head>
-              <Table.Row>
-                <Table.HeaderCell>ویژگی</Table.HeaderCell>
-                <Table.HeaderCell>Bytecode (JIT)</Table.HeaderCell>
-                <Table.HeaderCell>AOT</Table.HeaderCell>
-              </Table.Row>
-            </Table.Head>
-            <Table.Body>
-              <Table.Row>
-                <Table.Cell>Startup</Table.Cell>
-                <Table.Cell>کندتر</Table.Cell>
-                <Table.Cell>سریع</Table.Cell>
-              </Table.Row>
-
-              <Table.Row>
-                <Table.Cell>Memory</Table.Cell>
-                <Table.Cell>بیشتر</Table.Cell>
-                <Table.Cell>کمتر</Table.Cell>
-              </Table.Row>
-
-              <Table.Row>
-                <Table.Cell>نیاز به Runtime / VM</Table.Cell>
-                <Table.Cell>
-                  <Check />
-                </Table.Cell>
-                <Table.Cell>
-                  <X color='red' />
-                </Table.Cell>
-              </Table.Row>
-
-              <Table.Row>
-                <Table.Cell>مناسب برای Embedded</Table.Cell>
-                <Table.Cell>
-                  <X color='red' />
-                </Table.Cell>
-                <Table.Cell>
-                  <Check />
-                </Table.Cell>
-              </Table.Row>
-
-              <Table.Row>
-                <Table.Cell>مناسب برای Lightweight</Table.Cell>
-                <Table.Cell>
-                  معمولاً <X color='red' />
-                </Table.Cell>
-                <Table.Cell>
-                  <Check />
-                </Table.Cell>
-              </Table.Row>
-            </Table.Body>
-          </Table>
         </LI>
         <LI title='مزایا'>
-          <SimpleLI title='قابل حمل بودن (Portable)'>
-            <p>فقط یکبار build گرفته می شود و سپس به کمک VM روی سیستم عامل های مختلف بدون recomplie اجرا می شود.</p>
-          </SimpleLI>
-          <SimpleLI title='اجرای هوشمند (JIT)'>
-            <Code light>AOT: Best guess optimization</Code>
-            <Code light>JIT: Bytecode → JIT → optimized machine code</Code>
-            <p>یعنی رفتار واقعی کاربر دیده می شود و کد بر اساس usage واقعی optimize می شود.</p>
-          </SimpleLI>
-          <SimpleLI title='امنیت و کنترل'>
-            <p>
-              چون برنامه مستقیم machine code نیست در نتیجه VM می تواند آن را بررسی و در صورت لزوم اعمال محدودیت کند.
-            </p>
-          </SimpleLI>
-          <SimpleLI title='سرعت توسعه'>
-            <p>چون build سریعتر است و نیاز به compile برای هر platform نیست.</p>
-          </SimpleLI>
+          <SimpleUL>
+            <SimpleLI title='قابل حمل بودن (Portable)'>
+              <p>فقط یکبار build گرفته می شود و سپس به کمک VM روی سیستم عامل های مختلف بدون recomplie اجرا می شود.</p>
+            </SimpleLI>
+            <SimpleLI title='اجرای هوشمند (JIT)'>
+              <Code light>AOT: Best guess optimization</Code>
+              <Code light>JIT: Bytecode → JIT → optimized machine code</Code>
+              <p>یعنی رفتار واقعی کاربر دیده می شود و کد بر اساس usage واقعی optimize می شود.</p>
+            </SimpleLI>
+            <SimpleLI title='امنیت و کنترل'>
+              <p>
+                چون برنامه مستقیم machine code نیست در نتیجه VM می تواند آن را بررسی و در صورت لزوم اعمال محدودیت کند.
+              </p>
+            </SimpleLI>
+            <SimpleLI title='سرعت توسعه'>
+              <p>چون build سریعتر است و نیاز به compile برای هر platform نیست.</p>
+            </SimpleLI>
+          </SimpleUL>
         </LI>
         <LI title='معایب'>
           <SimpleUL>
