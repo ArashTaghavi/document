@@ -1,10 +1,10 @@
 /** @format */
 
-import { Card } from '@/app/Components/common'
-import { SimpleLI, SimpleUL, UL } from '@/app/Components/List'
+import { Bold, Card, Code } from '@/app/Components/common'
+import { SimpleLI, SimpleUL } from '@/app/Components/List'
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
-import { AOT, JIT, Profiling } from './components'
+import { AOT, ByteCode, JIT, Profiling } from './components'
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
@@ -26,6 +26,7 @@ export default function Page() {
       </Card>
       <AOT />
       <Profiling />
+      <ByteCode />
       <JIT />
     </PageLayout>
   )

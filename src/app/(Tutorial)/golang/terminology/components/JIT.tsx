@@ -80,8 +80,50 @@ function proccessOrder($order)
         </p>
         <p>در واقع CPU باید مقدام چک کند آیا VIP است یا نه؟ حتی اگر ۹۵٪ اوقات VIP باشد.</p>
         <SimpleUL title='تاثیرات'>
-          <SimpleLI>cache miss بیشتر</SimpleLI>
-          <SimpleLI>branch misprediction بیشتر (در CPU)</SimpleLI>
+          <SimpleLI title='cache miss بیشتر'>
+            CPU داده‌ای که لازم دارد را در cache پیدا نمی‌کند و مجبور می‌شود برود از RAM بگیرد. در این مدت CPU بیکار می
+            ماند و پرفورمنس به شدت افت می کند.
+          </SimpleLI>
+          <SimpleLI title='Branch Misprediction (اشتباه در پیش‌بینی شرط)'>
+            CPU برای سریع‌تر شدن، حدس می‌زند نتیجه‌ی if چیست. اگر حدس اشتباه باشد، Branch mispredication اتفاق می افتد
+            که موجب افت پرفورمنس می شود.
+          </SimpleLI>
+          <SimpleLI>performance کمتر از حالت ایده‌آل</SimpleLI>
+        </SimpleUL>
+      </div>
+      <Divider />
+      <div>
+        <Bold>در JIT چه اتفاقی می افتد؟</Bold>
+        <SimpleUL>
+          <SimpleLI title='Warm-up'>
+            <p>سیستم اجرا می‌شود و JIT شروع به جمع‌آوری اطلاعات می‌کند:</p>
+            <p>
+              VIP: 9500 calls
+              <br />
+              Normal: 500 calls
+            </p>
+          </SimpleLI>
+          <SimpleLI title='Optimization'>
+            <p>در این مرحله JIT می فهمد که این if همیشه VIP است و در نتیجه کد را به چیزی شبیه</p>
+            <Code light>fastPath(); // مستقیم</Code>
+            <p>می کند.</p>
+          </SimpleLI>
+          <SimpleLI>الگوی واقعی کاربران چیست.</SimpleLI>
+        </SimpleUL>
+        <Bold>نتیجه:</Bold>
+        <p>
+          کامپایلر فقط یک if ساده را می بیند و تصمیم می گیرد branch prediction عمومی و optimization متوسط انجام دهد.
+        </p>
+        <p>در واقع CPU باید مقدام چک کند آیا VIP است یا نه؟ حتی اگر ۹۵٪ اوقات VIP باشد.</p>
+        <SimpleUL title='تاثیرات'>
+          <SimpleLI title='cache miss بیشتر'>
+            CPU داده‌ای که لازم دارد را در cache پیدا نمی‌کند و مجبور می‌شود برود از RAM بگیرد. در این مدت CPU بیکار می
+            ماند و پرفورمنس به شدت افت می کند.
+          </SimpleLI>
+          <SimpleLI title='Branch Misprediction (اشتباه در پیش‌بینی شرط)'>
+            CPU برای سریع‌تر شدن، حدس می‌زند نتیجه‌ی if چیست. اگر حدس اشتباه باشد، Branch mispredication اتفاق می افتد
+            که موجب افت پرفورمنس می شود.
+          </SimpleLI>
           <SimpleLI>performance کمتر از حالت ایده‌آل</SimpleLI>
         </SimpleUL>
       </div>
