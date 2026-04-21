@@ -13,8 +13,8 @@ export default function Page() {
 
   return (
     <PageLayout title='حافظه' breadcrumb={breadcrumb}>
-      <Pointer />
       <Stack />
+      <Pointer />
       <Heap />
       <GarbageCollector />
       <Summary />
