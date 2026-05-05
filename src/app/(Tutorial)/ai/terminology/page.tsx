@@ -4,7 +4,19 @@ import { Card } from '@/app/Components/common'
 import { LI, UL } from '@/app/Components/List'
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
-import { Compare, DecoderOnly, EncoderDecoder, EncoderOnly, ICL, RNN, Transformer } from './components'
+import {
+  Compare,
+  DecoderOnly,
+  EncoderDecoder,
+  EncoderOnly,
+  GreedyRandomSampling,
+  ICL,
+  RNN,
+  SampleTopK,
+  SampleTopP,
+  Temprature,
+  Transformer
+} from './components'
 
 export default function Page() {
   const breadcrumb: LinkItem[] = [
@@ -33,6 +45,10 @@ export default function Page() {
       <DecoderOnly />
       <Compare />
       <ICL />
+      <SampleTopK />
+      <SampleTopP />
+      <Temprature />
+      <GreedyRandomSampling />
     </PageLayout>
   )
 }
