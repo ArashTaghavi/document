@@ -1,6 +1,6 @@
 /** @format */
 
-import { Card, Table } from '@/app/Components/common'
+import { Bold, Card, Code, Table } from '@/app/Components/common'
 
 export default function Spec() {
   return (
@@ -158,6 +158,66 @@ export default function Spec() {
         </Table.Body>
       </Table>
       <p>هارد هرچقدر بهتر باشد (مثلا nvme) فقط لود اولیه مدل سریعتر اتفاق می افتاد و در بقیه ی فرایند تاثیری ندارد.</p>
+      <Bold>مسیر واقعی اجرای یک LLM:</Bold>
+      <Code light>
+        {`        NVMe / SSD
+            │
+            ▼
+        RAM (لود مدل + context)
+            │
+   ┌────────┴────────┐
+   ▼                 ▼
+CPU (fallback)     GPU (اصلی)
+   │                 │
+   └──────┬──────────┘
+          ▼
+   تولید توکن (Inference)`}
+      </Code>
+      <Table>
+        <Table.Head>
+          <Table.Row>
+            <Table.HeaderCell>جزء سیستم</Table.HeaderCell>
+            <Table.HeaderCell>نقش در LLM</Table.HeaderCell>
+            <Table.HeaderCell>زمان فعال بودن</Table.HeaderCell>
+            <Table.HeaderCell>نوع bottleneck</Table.HeaderCell>
+            <Table.HeaderCell>تأثیر روی سرعت</Table.HeaderCell>
+          </Table.Row>
+        </Table.Head>
+
+        <Table.Body>
+          <Table.Row>
+            <Table.Cell>GPU</Table.Cell>
+            <Table.Cell>محاسبه اصلی (token generation)</Table.Cell>
+            <Table.Cell>در تمام inference</Table.Cell>
+            <Table.Cell>اصلی‌ترین bottleneck</Table.Cell>
+            <Table.Cell>بسیار زیاد 🚀 (تعیین‌کننده سرعت واقعی)</Table.Cell>
+          </Table.Row>
+
+          <Table.Row>
+            <Table.Cell>RAM</Table.Cell>
+            <Table.Cell>نگهداری مدل + context (حافظه نگهداری گفتگو)</Table.Cell>
+            <Table.Cell>در کل اجرای مدل</Table.Cell>
+            <Table.Cell>شرطی (اگر کم باشد)</Table.Cell>
+            <Table.Cell>غیرمستقیم ❗ (فقط اگر کم باشد سرعت را نابود می‌کند)</Table.Cell>
+          </Table.Row>
+
+          <Table.Row>
+            <Table.Cell>CPU</Table.Cell>
+            <Table.Cell>پردازش fallback و هماهنگی</Table.Cell>
+            <Table.Cell>در offload یا نبود GPU</Table.Cell>
+            <Table.Cell>کمکی</Table.Cell>
+            <Table.Cell>متوسط 🐢 (کندتر از GPU)</Table.Cell>
+          </Table.Row>
+
+          <Table.Row>
+            <Table.Cell>NVMe / SSD</Table.Cell>
+            <Table.Cell>لود مدل از دیسک</Table.Cell>
+            <Table.Cell>فقط هنگام شروع</Table.Cell>
+            <Table.Cell>startup bottleneck</Table.Cell>
+            <Table.Cell>موقت ⏱️ (بعد از لود تقریباً بی‌اثر)</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+      </Table>
     </Card>
   )
 }
