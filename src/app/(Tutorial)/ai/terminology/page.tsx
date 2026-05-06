@@ -5,6 +5,7 @@ import { LI, UL } from '@/app/Components/List'
 import { PageLayout } from '@/app/Components/PageLayout/page-layout'
 import { LinkItem } from '@/app/types'
 import {
+  Bias,
   Compare,
   DecoderOnly,
   EncoderDecoder,
@@ -49,6 +50,7 @@ export default function Page() {
       <SampleTopP />
       <Temprature />
       <GreedyRandomSampling />
+      <Bias />
     </PageLayout>
   )
 }

@@ -11,3 +11,5 @@ export { default as SampleTopK } from './SampleTopK'
 export { default as SampleTopP } from './SampleTopP'
 export { default as Temprature } from './Temprature'
 export { default as GreedyRandomSampling } from './GreedyRandomSampling'
+export { default as Bias } from './Bias'
+
