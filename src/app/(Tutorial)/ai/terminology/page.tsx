@@ -15,6 +15,7 @@ import {
   RNN,
   SampleTopK,
   SampleTopP,
+  Spec,
   Temprature,
   Transformer
 } from './components'
@@ -37,6 +38,26 @@ export default function Page() {
               بقیه ی متن های قبل از آن را نادیده می گیرد.
             </p>
           </LI>
+          <LI title='GGUF (GPT-Generated Unified Format)'>نسخه فشرده و بهینه‌شده مدل برای اجرای لوکال</LI>
+          <LI title='Quantization'>
+            کوانتیزیشن یعنی کم کردن دقت اعداد داخل مدل برای کم کردن حجم مدل، افزایش سرعت مدل و کاهش مصرف CPU/GPU.
+          </LI>
+          <LI title='CUDA (Compute Unified Device Architecture)'>
+            <p>زبان/پلتفرم برای استفاده از GPU.</p>
+            <p>
+              قبل از CUDA، کارت های گرافیک فقط برای بازی و تصویر استفاده می شدند. بعد از CUDA، در واقع GPU تبدیل به یک
+              ماشین محاسباتی خیلی سریع شد که مثلا در هوش مصنوعی می تواند محاسبات را سریع انجام دهد.
+            </p>
+          </LI>
+          <LI title='cuDNN (CUDA Deep Neural Network Library)'>
+            <p>یه لایه‌ی آماده و بهینه روی CUDA برای اجرای شبکه‌های عصبی. cuDNN در واقع یک کتابخانه است.</p>
+            <p>در واقع CUDA موتور خام GPU، و cuDNN یک موتور بهینه برای هوش مصنوعی است.</p>
+            <p>
+              برای اجرای یک مدل هوش مصنوعی، CUDA محاسبات را اول به دستورات عمومی GPU تبدیل می کند و سپس اجرا می کند که
+              کند تر است. ولی cuDNN برای اجرای دستورات هوش مصنوعی از قبل یک سری عملیات آماده و بهینه دارد، برخلاف CUDA
+              که استفاده عمومی دارد.
+            </p>
+          </LI>
         </UL>
       </Card>
       <RNN />
@@ -51,6 +72,7 @@ export default function Page() {
       <Temprature />
       <GreedyRandomSampling />
       <Bias />
+      <Spec />
     </PageLayout>
   )
 }
