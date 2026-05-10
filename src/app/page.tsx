@@ -24,7 +24,7 @@ export default function Page() {
       href: 'golang'
     },
     {
-      title: 'چت بات هوش مصنوعی',
+      title: 'هوش مصنوعی',
       href: 'ai'
     }
   ]

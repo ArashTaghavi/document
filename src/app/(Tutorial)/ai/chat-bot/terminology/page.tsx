@@ -23,7 +23,8 @@ import {
 export default function Page() {
   const breadcrumb: LinkItem[] = [
     { title: 'فهرست مستندات', href: '/' },
-    { title: 'چت پات هوش مصنوعی', href: '/ai' }
+    { title: 'هوش مصنوعی', href: '/ai' },
+    { title: 'چت بات هوش مصنوعی', href: '/ai/chat-bot' }
   ]
 
   return (
