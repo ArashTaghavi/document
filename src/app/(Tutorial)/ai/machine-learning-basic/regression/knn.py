@@ -60,3 +60,4 @@ predicted_target_name = iris_dataset['target_names'][predictedXX_NEW[0]]
 
 print("True Label:", true_index,":",true_target_name)
 print("Predicted Label:", predictedXX_NEW[0],":",predicted_target_name)
+ 
