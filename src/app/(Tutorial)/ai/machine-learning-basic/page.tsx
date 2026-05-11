@@ -8,7 +8,9 @@ const Security = () => {
     {
       title: 'اصطلاحات و مفاهیم',
       href: '/ai/machine-learning-basic/terminology'
-    }
+    },
+    { title: 'الگوریتم های ماشین لرنینگ', href: '/ai/machine-learning-basic/lachine-learning-algorithms' },
+    { title: 'Classification', href: '/ai/machine-learning-basic/classification' }
   ]
 
   return (
